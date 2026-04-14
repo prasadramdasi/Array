@@ -1,5 +1,6 @@
 public static void bubbleSort(int a[]){
         int n=a.length;
+        int didswap=0;
 
         for(int i=0;i<n-1;i++){
 
@@ -8,8 +9,13 @@ public static void bubbleSort(int a[]){
                     int temp=a[j];
                     a[j]=a[j+1];
                     a[j+1]=temp;
+                    didswap=1'    
                 }
             }
+          if(didswap==0){
+             break;
+          }
+        
 
         }
  }
